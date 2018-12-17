@@ -1,0 +1,22 @@
+# ===================================================================
+# Spring Boot configuration externalized properties.
+#
+# This configuration will be overridden by the Spring profile you use;
+#
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+spring: 
+  profiles:
+    active: native
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+message: New Message
+
